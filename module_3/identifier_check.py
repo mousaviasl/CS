@@ -16,4 +16,3 @@ while True:
         print("It is great!")
     variable = input("Enter another variable name (q to quit): ")
 print("Finsihed! Have a great day!")
-
