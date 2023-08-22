@@ -3,9 +3,7 @@ import random
 def stuck_in_the_mud():
     dice = [random.randint(1, 6) for _ in range(5)]
     score = sum([value for value in dice if value != 2 and value != 5])
-    
     print("Stuck in the Mud")
-    
     while True:
         choice = input("Press r to roll or q to quit: ")
         
@@ -24,5 +22,4 @@ def stuck_in_the_mud():
             break
         else:
             print("Invalid choice. Press r to roll or q to quit.")
-
 stuck_in_the_mud()

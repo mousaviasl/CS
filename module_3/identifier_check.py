@@ -8,10 +8,8 @@ while True:
         break
     if ' ' in variable:
         print("Illegal (no spaces allowed, must begin with a letter)")
-        break
-    if variable.isalnum() != True:
+    elif variable.isalnum() != True:
         print("legal, but uses poor style (should only use letters or digits)")
-        break
     elif variable.isalnum() == True:
         print("It is great!")
     variable = input("Enter another variable name (q to quit): ")
