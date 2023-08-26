@@ -30,4 +30,4 @@ while play == '1':
         numbers = []
         assumptions = []
         if play == '0':
-            break
+        break
