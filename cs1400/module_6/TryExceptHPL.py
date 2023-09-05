@@ -8,9 +8,9 @@ hpl = 'hBMICalculations.txt'
 with open(hpl, 'w') as f:
     data = f.read()
     
-1. Create a file
+"""1. Create a file
 2. Open a file to add results to
-3. Read results from file
+3. Read results from file"""
 
 
 print("Welcome to the fat burning heart rate and BMI machine!")
@@ -28,15 +28,18 @@ while True:
         
         if age < 0:
             exception_occurred = True
-            raise ValueError("Invalid age. Enter a positive number for your age.")
+            raise PositiveNumberForAgeError("Invalid age. Enter a positive number for your age.")
         if max <= 0:
-            raise ValueError("Invalid age. You cannot be that old and use this program.")
+            raise SoOldPersonError("Invalid age. You cannot be that old and use this program.")
         if weight < 0:
             exception_occurred = True
-            raise ValueError("Invalid weight! Enter a positive number for your weight.")
+            raise PositiveNumberForWeightError("Invalid weight! Enter a positive number for your weight.")
         if height < 0:
             exception_occurred = True
-            raise ValueError("Invalid height! Enter a positive number for your height.")
+            raise PositiveNumberForHeightError("Invalid height! Enter a positive number for your height.")
+        
+    except PositiveNumberForAgeError as psa:
+        err1 = f.write(psa)
     except Exception as e:
         print(e)
         exception_occurred = True
@@ -52,3 +55,6 @@ elif BMI <= 25:
     f.write("Your BMI is in the normal range.")
 else:
     f.write("Your BMI is over the normal standard.")
+    
+with open("error_log.txt", "w") as error_file:
+    f.write(error_message)
