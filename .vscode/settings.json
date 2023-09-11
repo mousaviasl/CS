@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "/workspaces/CS/cs1410"
+    "cmake.sourceDirectory": "/workspaces/CS/cs1410",
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }

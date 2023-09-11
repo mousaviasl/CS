@@ -14,7 +14,7 @@ int main() {
     cin >> rate;
     rate = rate / 100.0;
     double monthly_payment = principal_amount * (((rate / 12) * (pow((1 + (rate / 12)), month))) / ((pow((1 + (rate / 12)), month)) -1));
-    cout << "The monthly payment is: " << monthly_payment << endl;
+    cout << "The monthly payment is: " << fixed << monthly_payment << endl;
     
 
     return 0;
