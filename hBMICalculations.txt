@@ -1,0 +1,7 @@
+Age: 12
+Max Heart Rate: 208
+Fat Burning Heart Rate: 145.6
+Weight: 100 kg
+Height: 1.8 meters
+BMI: 30.864
+Your BMI is over the normal standard.
