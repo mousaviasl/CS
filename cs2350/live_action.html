@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>Are you a member?</label>
+        <input type="radio" id="yes" name="member" value="yes" required>
+        <label for="yes">Yes</label>
+        
+        <input type="radio" id="no" name="member" value="no" required>
+        <label for="no">No</label>
+
+        <label for="discussion">What would you like to discuss?</label>
+        <textarea id="discussion" name="discussion" rows="4" required></textarea>
+
+        <div class="terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I accept the terms and conditions.</label>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+    </form>
+</div>
+
+</body>
+</html>
