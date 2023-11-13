@@ -1,0 +1,12 @@
+:root {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+header {
+    font-size: 2rem;
+    padding: 0rem;
+}
