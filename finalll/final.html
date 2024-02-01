@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <title>Escrow Services</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">EscrowHome</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sign In/Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Report a Problem</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">People</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to EscrowHome</h1>
+                <p>EscrowHome is a trusted third-party service that securely holds funds in a transaction until all conditions are met. Ensuring safe and verified dealings for all parties involved.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <input type="text" id="searchBar" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+
+        <!-- Background images and other content go here -->
+
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">&copy; 2023 EscrowHome. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchBar = document.getElementById('searchBar');
+    searchBar.addEventListener('input', function(event) {
+        console.log("Search for: " + event.target.value);
+        // Add search functionality as needed
+    });
+});
